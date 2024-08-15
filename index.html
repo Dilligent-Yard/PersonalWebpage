@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #c9d1d9;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .portfolio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 360px;
+            padding: 30px;
+            background-color: #121212;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(0.95);
+            transition: transform 0.3s ease-in-out;
+        }
+        .portfolio-container:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-container > * {
+            transition: transform 0.3s ease-in-out;
+        }
+        .portfolio-container:hover > * {
+            transform: translateY(-5px);
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: url('https://i.pinimg.com/564x/97/15/c7/9715c7978b3c11827eb804a8c7d9cfa4.jpg') no-repeat center center/cover;
+            border: 4px solid #c9d1d9;
+        }
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .info-container h1 {
+            margin: 10px 0 5px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .info-container p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .bio {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+        }
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .competence {
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .competence:hover {
+            background-color: #333;
+            transform: translateY(-5px);
+        }
+        .social-media-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-media-section h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .social-media-section .icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .social-media-section a {
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 26px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-media-section a:hover {
+            color: #58a6ff;
+            transform: translateY(-5px);
+        }
+        @media (max-width: 768px) {
+            .portfolio-container {
+                width: 90%;
+                padding: 20px;
+            }
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+            }
+            .info-container h1 {
+                font-size: 24px;
+            }
+            .info-container p {
+                font-size: 16px;
+            }
+            .bio {
+                font-size: 14px;
+            }
+            .competence {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+            .social-media-section h2 {
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 400px) {
+            .portfolio-container {
+                width: 100%;
+                padding: 15px;
+            }
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            .info-container h1 {
+                font-size: 20px;
+            }
+            .info-container p {
+                font-size: 14px;
+            }
+            .bio {
+                font-size: 12px;
+            }
+            .competence {
+                font-size: 10px;
+                padding: 6px 12px;
+            }
+            .social-media-section h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <div class="profile-picture"></div>
+        <div class="info-container">
+            <h1>Rick</h1>
+            <p>Web Developer</p>
+            <p>ricksondarosa@gmail.com</p>
+        </div>
+        <div class="bio">
+            <p>Web developer dedicated to crafting innovative and responsive web solutions, always eager to learn and grow in the digital world.</p>
+        </div>
+        <div class="competences">
+            <div class="competence">HTML & CSS</div>
+            <div class="competence">JavaScript</div>
+            <div class="competence">Responsive Design</div>
+            <div class="competence">Basic Git & GitHub</div>
+        </div>
+        <div class="social-media-section">
+            <h2>Connect with me</h2>
+            <div class="icons">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/21966270519" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
