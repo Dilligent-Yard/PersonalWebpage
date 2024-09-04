@@ -27,10 +27,11 @@
             border-radius: 20px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             transform: scale(0.95);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
         .portfolio-container:hover {
             transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         .portfolio-container > * {
             transition: transform 0.3s ease-in-out;
@@ -74,12 +75,17 @@
             margin: 15px 0;
         }
         .competence {
+            display: flex;
+            align-items: center;
             background-color: #1f1f1f;
             padding: 10px 20px;
             border-radius: 20px;
             font-size: 14px;
             font-weight: 500;
             transition: background-color 0.3s, transform 0.3s;
+        }
+        .competence i {
+            margin-right: 10px;
         }
         .competence:hover {
             background-color: #333;
@@ -176,20 +182,18 @@
             <p>Web developer dedicated to crafting innovative and responsive web solutions, always eager to learn and grow in the digital world.</p>
         </div>
         <div class="competences">
-            <div class="competence">HTML & CSS</div>
-            <div class="competence">JavaScript</div>
-            <div class="competence">Responsive Design</div>
-            <div class="competence">Basic Git & GitHub</div>
+            <div class="competence"><i class="fab fa-html5"></i>HTML</div>
+            <div class="competence"><i class="fab fa-css3-alt"></i>CSS</div>
+            <div class="competence"><i class="fab fa-js"></i>JavaScript</div>
+            <div class="competence"><i class="fab fa-python"></i>Python</div>
         </div>
         <div class="social-media-section">
             <h2>Connect with me</h2>
             <div class="icons">
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Dilligent-Yard" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://wa.me/5521966270519" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
 </body>
 </html>
-
